@@ -1,0 +1,40 @@
+body {
+    background: yellow;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container.cardstyle {
+    width: 100%;
+    max-width: 400px;
+}
+
+.card {
+    background: white;
+    height: 500px;
+    border-radius: 30px;
+    transition: box-shadow 0.3s ease; /* Added transition for smooth effect */
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-width: 4px; /* Increase border width on hover */
+    box-shadow: 5px 10px;
+
+}
+
+button {
+    color: #000;
+    background: yellow;
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: auto;
+    }
+}
